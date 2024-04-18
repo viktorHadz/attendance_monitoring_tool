@@ -1,0 +1,24 @@
+.tab-button {
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer; /* Makes it clear that the tabs are clickable */
+    border: 1px solid transparent; /* Ensures that layout doesn't shift when border is added on active */
+}
+
+.tab-button:hover {
+    background-color: #ddd; /* Light gray, indicating interactivity */
+}
+
+.tab-button.active {
+    background-color: #007BFF; /* Solid blue */
+    color: white;
+    border-color: #0056b3; /* Darker blue border for emphasis */
+    transform: scale(1.05); /* Slightly enlarges the active tab */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for 3D effect */
+}
+
+.rounded-md {
+    border-radius: 0.375rem; /* Adds rounded corners (Tailwind's .rounded-md equivalent) */
+}
+
+
+
